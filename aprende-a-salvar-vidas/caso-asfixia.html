@@ -1,41 +1,187 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Guía de Asfixia</title>
-    <link rel="stylesheet" href="style.css"> <!-- Agrega aquí tu archivo CSS -->
-</head>
-<body>
-    <header>
-        <h1>Guía de Asfixia</h1>
-    </header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="../img/vitalink-icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="../global/reset.css">
+    <link rel="stylesheet" href="../global/menu.css">
+    <link rel="stylesheet" href="../global/animaciones.css">
+    <link rel="stylesheet" href="styles/masterclass.css" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Vitalink | Guía de Asfixia</title>
+  </head>
+  <body>
     <main>
-        <section id="step1">
-            <h2>Paso 1: Evaluación de la situación</h2>
-            <p>Antes de actuar, evalúa la situación para determinar si es segura para ti y la persona en peligro.</p>
-            <a href="#step2">Siguiente</a>
-        </section>
 
-        <section id="step2">
-            <h2>Paso 2: Identificar asfixia</h2>
-            <p>Identifica los signos de asfixia en la persona, como dificultad para respirar, tos débil o ausencia de sonido al toser.</p>
-            <a href="#step3">Siguiente</a>
-        </section>
+        <!-- SIDEBAR MENU -->
+        <input type="checkbox" id="menu-toggle" class="hidden">
+        <label for="menu-toggle" class="menu-icon">&#9776;</label>
+        <nav class="side-menu">
+          <label for="menu-toggle" class="close-button">&times;</label>
+          <div class="lang">
+            <a href="#">ES</a>
+            <a href="../EN/learn-to-save-lives/masteclass-asphyxia.html">EN</a>
+          </div>
+          <ul>
+            <li><a href="../index.html"><img class="logo-menu" src="../img/vitalink-light.png" alt="Vitalink" /></a></li>
+            <li><a href="../index.html">Home <i class='bx bx-right-arrow-alt'></i></a></li>
+            <li><a href="../primeros-auxilios/index.html">Conoce sobre primeros auxilios <i class='bx bx-right-arrow-alt'></i></a></li>
+            <li><a href="../botiquines/index.html">Como armar un buen botiquín <i class='bx bx-right-arrow-alt'></i></a>
+            </li>
+          </ul>
+          <!-- ANIMACIÓN PULSE -->
+          <div class="heart-rate">
+            <!-- Heart rate icon-->
+            <svg version="1.0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+              y="0px" width="150px" height="73px" viewBox="0 0 150 73" enable-background="new 0 0 150 73"
+              xml:space="preserve">
+              <polyline fill="none" stroke="#ffffff69" stroke-width="3" stroke-miterlimit="10"
+                points="0,45.486 38.514,45.486 44.595,33.324 50.676,45.486 57.771,45.486 62.838,55.622 71.959,9 80.067,63.729 84.122,45.486 97.297,45.486 103.379,40.419 110.473,45.486 150,45.486" />
+            </svg>
+            <div class="fade-in"></div>
+            <div class="fade-out"></div>
+          </div>
+        </nav>
+        <div class="overlay-menu"></div>
 
-        <section id="step3">
-            <h2>Paso 3: Aplicar la maniobra de Heimlich</h2>
-            <p>Si la persona no puede toser, aplica la maniobra de Heimlich para despejar las vías respiratorias.</p>
-            <a href="#step1">Volver</a>
-        </section>
+        <div class="main__slide" id="slide0">
+            <!-- http://agenciadenoticias.unal.edu.co/detalle/maniobra-de-heimlich-salvavidas-para-personas-atragantadas -->
+            <div class="main__slide--introduction">
+              <div>
+              <h1>Guía de asfixia</h1>
+                <p>
+                    Según la Agencia de Noticias de la UNAL en Colombia cada año se
+                    presentan entre 150 y 250 casos de muerte por atoramiento en mayores de
+                    15 años, y entre 100 y 200 casos en niños menores de 5 años.
+                </p>
+              </div>
+            </div>
+            <div class="main__slide--buttons">
+              <a href="./index.html" class="back btn"><i class='bx bx-left-arrow-alt'></i></i></a>
+              <a href="#slide1" class="next btn"><i class='bx bx-right-arrow-alt'></i></a>
+            </div>
+        </div>
+    
+        <div class="main__slide" id="slide1">
+          <div>
+            <div class="main__slide--introduction">
+                <h3>Hoy aprenderemos...</h3>
+                <h1>Maniobra de Heimlich</h1>
+            </div>
+            <!-- https://www.cigna.com/es-us/knowledge-center/hw/maniobra-de-heimlich-para-adultos-y-para-nios-de-tf7235-->
+            <p>
+              Una persona que se está atragantando no puede hablar, toser ni
+              respirar. La maniobra de Heimlich puede ayudar a expulsar el objeto
+              que está obstruyendo las vías respiratorias de la persona.
+            </p>
+          </div>
+          <img src="img/image5.jpg" alt="henry heimlich maneuver" />
+          <div class="main__slide--buttons">
+            <a href="#slide0" class="back btn"><i class='bx bx-left-arrow-alt'></i></a>
+            <a href="#slide2" class="next btn"><i class='bx bx-right-arrow-alt'></i></a>
+          </div>
+        </div>
+    
+        <div class="main__slide" id="slide2">
+            <div>
+              <div class="main__slide--head">
+                <span>1</span>
+                <h3>Posición inicial</h3>
+              </div>
+              <!--https://www.cigna.com/es-us/knowledge-center/hw/maniobra-de-heimlich-para-adultos-y-para-nios-de-tf7235-->
+              <p>
+                  Ponte detrás de la persona. Si es un niño, arrodíllate detrás de él.
+                  Coloca un pie adelante para mantener el equilibrio. Luego, rodea la
+                  cintura de la persona con tus brazos e inclina ligeramente su cuerpo
+                  hacia adelante.
+              </p>
+            </div>
+            <img src="img/image7.png" alt="henry heimlich maneuver" />
+            <div class="main__slide--buttons">
+              <a href="#slide1" class="back btn"><i class='bx bx-left-arrow-alt'></i></a>
+              <a href="#slide3" class="next btn"><i class='bx bx-right-arrow-alt'></i></a>
+            </div>
+        </div>
 
-        <section id="step4">
-            <h2>Paso 4: Llamar a emergencias</h2>
-            <p>Si la persona sigue teniendo problemas, llama a servicios de emergencia y sigue intentando la maniobra de Heimlich.</p>
-        </section>
+        <div class="main__slide" id="slide3">
+          <div>
+            <div class="main__slide--head">
+              <span>2</span>
+              <h3>Puño encima del ombligo</h3>
+            </div>
+            <p>
+                Cierra un puño con una mano y colócalo justo encima del ombligo de la persona.
+            </p>
+          </div>
+          <img src="img/image8.jpeg" alt="hand position in the heimlich maneuver" />
+          <div class="main__slide--buttons">
+            <a href="#slide2" class="back btn"><i class='bx bx-left-arrow-alt'></i></a>
+            <a href="#slide4" class="next btn"><i class='bx bx-right-arrow-alt'></i></a>
+          </div>
+      </div>
+
+      <div class="main__slide" id="slide4">
+        <div>
+          <div class="main__slide--head">
+            <span>3</span>
+            <h3>Sujeta el puño y aplica presión</h3>
+          </div>
+          <p>
+            Ahora, sujeta ese puño con la otra mano. En el abdomen, realiza un rápido impulso 
+            hacia arriba, como si intentaras levantar a la persona. Si es un niño, presiona con
+            suavidad pero con firmeza para no dañar los órganos internos.
+          </p>
+        </div>
+        <img src="img/image9.gif" alt="Nurse demonstrating Heimlich Maneuver - college of madrid's YouTube channel" />
+        <div class="main__slide--buttons">
+          <a href="#slide3" class="back btn"><i class='bx bx-left-arrow-alt'></i></a>
+          <a href="#slide5" class="next btn"><i class='bx bx-right-arrow-alt'></i></a>
+        </div>
+    </div>
+
+    <div class="main__slide" id="slide5">
+      <div>
+        <!-- https://www.ludusglobal.com/blog/como-hacer-la-maniobra-de-heimlich -->
+        <div class="main__slide--head">
+          <span>4</span>
+          <h3>Repite si es necesario</h3>
+        </div>
+        <p>
+          Realiza un ciclo de cinco compresiones abdominales seguidas de cinco golpes entre los hombros.
+          Repite hasta que la obstrucción ceda o la persona pierda el conocimiento.
+        </p>
+        <p>
+          En mujeres embarazadas, utiliza compresiones torácicas. Coloca el puño justo arriba del esternón
+          y efectúa compresiones hacia arriba para despejar las vías respiratorias.
+        </p>
+      </div>
+      <img src="img/image10.png" alt="Nurse demonstrating Heimlich Maneuver - college of madrid's YouTube channel" />
+      <div class="main__slide--buttons">
+        <a href="#slide4" class="back btn"><i class='bx bx-left-arrow-alt'></i></a>
+        <a href="#slide6" class="next btn"><i class='bx bx-right-arrow-alt'></i></a>
+      </div>
+    </div>
+
+    <div class="main__slide" id="slide6">
+      <div>
+        <div class="main__slide--introduction">
+            <h3>Ten en cuenta que...</h3>
+        </div>
+        <!-- https://www.cigna.com/es-us/knowledge-center/hw/maniobra-de-heimlich-para-adultos-y-para-nios-de-tf7235-->
+        <p>
+          Si a pesar de tus esfuerzos la obstrucción no se elimina y la persona entra en una parada cardiorrespiratoria,
+          inicia la reanimación cardiopulmonar (RCP) inmediatamente para mantener el flujo sanguíneo y las funciones 
+          vitales hasta la llegada de los servicios de emergencia. El conocimiento de la RCP 
+          es esencial y puede ser crítico en estas situaciones.
+        </p>
+      </div>
+      <div class="main__slide--buttons">
+        <a href="#slide5" class="back btn"><i class='bx bx-left-arrow-alt'></i></a>
+        <a href="caso-asfixia-test.html" class="next btn quiz">¡Ir al Quiz! <i class='bx bx-right-arrow-alt'></i></a>
+      </div>
+    </div>
+
     </main>
-    <footer>
-        <p>&copy; 2023 Vitalink</p>
-    </footer>
-</body>
+  </body>
 </html>

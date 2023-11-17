@@ -1,41 +1,64 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>  
+<html lang="es">
+
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vitalink</title>
+    <link rel="shortcut icon" href="./img/vitalink-icon.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
-    <meta name="description" content="Primeros Auxilios al Alcance de Todos | School project: Vitalink - First Aid Learning Website">
+    <link rel="stylesheet" href="global/animaciones.css">
+    <link rel="stylesheet" href="global/reset.css">
+    <link rel="stylesheet" href="global/menu.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Vitalink - Todo sobre primeros Auxilios</title>
 </head>
-<style>
-    :root{
-        --red:#ff1e00;
-        --pink: #fea1a1;
-        --white: #ffffff;
-        --gray: #121212;
-    }
-</style>
-<body>
-    <header>
-        <h1>VitaLink</h1>
-        <h3>
-            Primeros Auxilios al Alcance de Todos
-        </h3>
-    </header>
-    <main>
-        <div class="carta">
-            <div class="carta__aprende">
-                <!-- Aprende a salvar vidas -->
-            </div>
-            <div class="carta__blog">
-                <!-- blog de primeros auxilios -->
-            </div>
-            <div class="carta__botiquin">
-                <!-- Aprende a armar tu botiquin -->
-            </div>
 
-        </div>
+<body>
+    <main>
+        <section class="container">
+            <div class="content">
+
+                <header class="header home">
+                    <img src="img/vitalink.png" alt="Vitalink | Aprende primeros auxilios">
+                    <h1>Un espacio para aprender primeros auxilios</h1>
+                    <div class="lang">
+                        <a href="#">ES</a>
+                        <a href="EN/index.html">EN</a>
+                    </div>
+                </header>
+
+                <div class="menu_cards">
+                    <div class="card_menu learn_save_life">
+
+                        <div class="content-card">
+                            <a href="aprende-a-salvar-vidas/index.html" class="btn-home">
+                                <h2 class="title_section">Aprende a <br /><strong>salvar vidas</strong><i class='bx bx-plus'></i></h2>
+                            </a>
+                        </div>
+                        <div class="overlay"></div>
+                    </div>
+
+                    <div class="card_menu general_first_aids">
+                        <div class="content-card">
+                            <a href="primeros-auxilios/index.html" class="btn-home">
+                                <h2 class="title_section">Conoce todo <br /><strong>sobre primeros auxilios</strong><i class='bx bx-plus'></i></h2>
+                            </a>
+                        </div>
+                        <div class="overlay"></div>
+                    </div>
+
+                    <div class="card_menu good_fa_kit">
+                        <div class="content-card">
+                            <a href="botiquines/index.html" class="btn-home">
+                                <h2 class="title_section">Cómo armar <br /><strong>un buen botiquín</strong><i class='bx bx-plus'></i></h2>
+                            </a>
+                        </div>
+                        <div class="overlay"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
-    
 </body>
+
 </html>

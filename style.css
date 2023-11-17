@@ -1,0 +1,227 @@
+header.header {
+    position: absolute;
+    padding-top: 25px;
+    z-index: 1;
+    height: 120px;
+    width: 100%;
+    background: rgb(0, 0, 0);
+    background: -moz-linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgba(255, 255, 255, 0) 100%);
+    background: -webkit-linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgba(255, 255, 255, 0) 100%);
+    background: linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgba(255, 255, 255, 0) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000", endColorstr="#ffffff", GradientType=1);
+}
+
+header.header h1 {
+    color: var(--white);
+    letter-spacing: 3px;
+    font-weight: 100;
+    font-family: 'Roboto';
+    font-size: 1.6rem;
+}
+
+header.header img {
+    width: 200px;
+}
+
+
+/*ESTILOS HOME*/
+
+section.container {
+    height: 100vh;
+    width: 100%;
+}
+
+.menu_cards {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+
+.card_menu {
+    flex: 25%;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    scale: 1;
+    overflow: hidden;
+}
+
+.card_menu>.overlay {
+    background: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+body:hover .overlay {
+    background: var(--black);
+    opacity: 0.8;
+}
+
+.card_menu:hover .overlay {
+    opacity: 0.3 !important;
+}
+
+.card_menu:hover .content-card a.btn-home {
+    padding-bottom: 60%;
+}
+
+.card_menu:hover {
+    scale: 1.1;
+}
+
+.card_menu:hover .bg-video {
+    opacity: 1;
+
+}
+
+.card_menu .bg-video {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    opacity: 0;
+    transform: scale(1.2);
+}
+
+.card_menu .content-card {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    align-items: end;
+    padding: 5rem;
+}
+
+.card_menu.learn_save_life {
+    background-image: url(img/bg-learn-safe-lifes.jpg);
+    animation: slideDown 0.3s forwards;
+
+}
+
+.card_menu.general_first_aids {
+    background-image: url(img/bg-first-aids.jpg);
+    animation: slideDown 0.5s forwards;
+}
+
+.card_menu.good_fa_kit {
+    background-image: url(img/bg-first-aids-kit.jpg);
+    animation: slideDown 0.8s forwards;
+}
+
+.card_menu {
+    background-size: cover;
+    background-position: center center;
+}
+
+.card_menu i {
+    display: block;
+    margin: 10px 0;
+}
+
+a.btn {
+    background: var(--red);
+    overflow: hidden;
+    padding: 0px 60px;
+}
+
+.card_menu h2.title_section {
+    color: var(--white);
+    font-size: 3.2rem;
+    line-height: 3.2rem;
+    font-weight: 400;
+    text-align: center;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.card_menu a.btn-home {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    height: 100%;
+    z-index: 2;
+    align-items: end;
+    justify-content: center;
+    text-decoration: none;
+    padding-bottom: 50px;
+}
+
+.card_menu a.btn-red {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.card_menu a.btn-red {
+    background: var(--red);
+}
+
+.card_menu a.btn-red {
+    background: var(--red);
+    padding: 15px 40px;
+    border-radius: 5px;
+    color: var(--white);
+    text-decoration: none;
+    font-size: 1.5rem;
+    z-index: 2;
+    position: relative;
+}
+
+.container .content {
+    text-align: center;
+    height: 100vh;
+}
+
+@media (max-width: 768px) {
+    .card_menu {
+        flex: 100%;
+        overflow: auto;
+        height: 50vh;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .card_menu:hover .content-card a.btn-home {
+        padding-bottom: 20%;
+    }
+
+    .menu_cards {
+        flex: 100%;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        overflow: initial;
+    }
+
+    header.header {
+        position: static;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 20px 0;
+        height: auto;
+        background: var(--blue-dark);
+    }
+
+    header.header h1 {
+        color: var(--white);
+        font-size: 1.5rem;
+    }
+
+    header.header img {
+        width: 170px;
+    }
+    
+}
